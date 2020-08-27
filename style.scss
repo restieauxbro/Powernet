@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap");
+
+$gradient: linear-gradient(
+    45deg,
+    #ff9c7c 18.2%,
+    rgba(255, 255, 255, 0) 79.8%
+  ),
+  #d057ef;
+
+body {
+  margin: 0;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: white;
+  background: $gradient;
+  font-size: 18px;
+}
+
+.hero-container {
+  height: 100vh;
+  .hero {
+    position: relative;
+    height: 100%;
+    h1 {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 7rem;
+      z-index: 1;
+      font-weight: 800;
+    }
+    h2 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 3rem;
+    }
+    button {
+      position: absolute;
+      bottom: 12%;
+      left: 50%;
+     transform: translate(-50%, -50%);
+      z-index: 1;
+      padding: 20px 45px;
+      font-size: 1em;
+      background: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+      transition: all .3s ease;
+      p {
+        background: $gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        font-size: 1.3rem;
+      }
+      &:hover {
+        
+      }
+    }
+    .face {
+      position: absolute;
+      width: 700px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .frontface {
+        position: absolute;
+        top: 0.3%;
+        right: 1.5%;
+        width: 82%;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.hamburger {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  transform: translate(0, -50%);
+  width: 60px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  .line {
+    width: 80%;
+    height: 2px;
+    background: white;
+    &:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+}
