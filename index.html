@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7e1f40dcf8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="hero-container">
       <div class="hero">
         <h2>AI for the little guy.</h2>
-        <button><p>Sign up</p></button>
+        <div class="button-container">
+          <button><p>Sign up</p></button>
+        </div>
         <div class="face">
           <svg
             class="backface"
@@ -33,7 +39,7 @@
               />
               <path
                 d="M371.622 318.016C388.145 70.4719 792.254 64.4507 821.699 277.554C847.082 461.254 727.23 810.037 392.92 737.105C357.525 729.384 369.758 697.834 378.947 677.909C391.651 650.363 378.085 641.485 377.183 637.948C384.801 630.895 401.549 624.36 401.549 624.36C401.549 624.36 356.22 617.097 378.28 593.744C395.427 575.592 407.861 548.157 373.267 549.225C338.673 550.293 333.275 525.48 352.223 511.006C378.118 491.225 404.129 430.954 386.248 403.873C368.367 376.793 370.706 331.742 371.622 318.016Z"
-                fill="url(#paint1_linear)"
+                fill="url(#paint3_linear)"
               />
             </g>
             <defs>
@@ -81,17 +87,6 @@
                 <stop stop-color="#FF6C3E" />
                 <stop offset="1" stop-color="white" stop-opacity="0" />
               </linearGradient>
-              <linearGradient
-                id="paint1_linear"
-                x1="381.23"
-                y1="574.037"
-                x2="763.197"
-                y2="204.003"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FF6C3E" />
-                <stop offset="1" stop-color="white" stop-opacity="0" />
-              </linearGradient>
             </defs>
           </svg>
           <h1>Powernet</h1>
@@ -130,6 +125,23 @@
           <div class="line"></div>
         </div>
       </div>
+
+      <div class="icon-container">
+        <div class="icons">
+          <ul>
+            <li><i class="fas fa-code-branch"></i></li>
+            <li><i class="fas fa-code"></i></li>
+            <li><i class="fas fa-dna"></i></li>
+            <li><i class="fas fa-database"></i></li>
+            <li><i class="fas fa-credit-card"></i></li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
+    <div id="particles-js-bg"></div>
+    <div id="particles-js"></div>
+    <script src="/assets/particles.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
